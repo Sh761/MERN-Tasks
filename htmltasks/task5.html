@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{        
+            color: rgb(0, 110, 255);
+        }
+        table,td,th{
+            border: 1px solid;
+        }
+       table{
+            width:100%;
+            border-collapse: collapse;
+        }
+
+       input{
+            width: 1200px;
+        }
+        td{
+            width: 200px;
+            text-align: center;
+        }
+
+        button{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <table border="1">
+        <form>
+            <tr>
+                <td><label for="fname">First Name: </label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name: </label></td>
+                <td><input type="text" id="lname" name="lname" ></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Password: </label></td>
+                <td><input type="password" id="pwd" name="pwd" ></td>
+            </tr>
+            <tr>
+                <td><label for="rpwd">Re-enter Password: </label></td>
+                <td><input type="password" id="rpwd" name="rpwd"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender: </label></td>
+                <td>
+                  
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Female</label>
+                
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label for="age">Age: </label></td>
+                <td><input type="number" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Phone Number: </label></td>
+                <td><input type="text" id="phno" name="phno"></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><input type="text" id="address" name="address" style="height: 100px;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="state">State: </label></td>
+                <td><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+               <td> <select id="country" id="country" >
+                <option>Choose your country</option>
+                    <option>A</option>
+                    <option>B</option>
+                </select></td>
+            </tr>
+            
+            <tr>
+                <td>Languages known</td>
+                <td align: "left">
+                    <input type="checkbox" id="vehicle1" name="english" value="English">
+                    <label for="english"> English</label>
+                    <input type="checkbox" id="Kannada" name="Kannada" value="Kannada">
+                    <label for="Kannada"> Kannada</label>
+                    <input type="checkbox" id="Hindi" name="Hindi" value="Boat">
+                    <label for="Hindi"> Hindi</label>
+                    <input type="checkbox" id="Telugu" name="Telugu" value="Boat">
+                    <label for="Telugu"> Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td colspan="3" >Login in to <a href="https://ethnus.com/">Ethnus </a> website</td>
+            </tr>
+
+
+        </form>
+        </table>
+
+<button>Register</button>
+
+
+    </center>
+
+    
+    
+</body>
+</html>
