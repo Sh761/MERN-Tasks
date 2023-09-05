@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aquamarine;
+    }
+
+
+    .rectangle{
+        margin-top: 10%;
+        border: 5px solid lightblue;
+        height: 50px;
+        width: 100px;
+        border-radius: 15px;
+    }
+
+        .horizontal-oval {
+            width: 200px;
+            height: 100px;
+            background-color: transparent;
+            border: 2px solid lightblue;
+            border-radius: 100px / 50px; /* Half of width and height */
+        }
+
+
+
+        .rectangle-with-rounded-diagonal-corners {
+            width: 200px;
+            height: 100px;
+            background-color: transparent;
+            border: 2px solid #000;
+            border-radius: 20px 0 0 20px; /* Top-left and bottom-left corners */
+            position: relative;
+        }
+
+        .rectangle-with-rounded-diagonal-corners::before {
+            content: "";
+            position: absolute;
+            width: 40px; /* Adjust this value for the desired diagonal roundness */
+            height: 100%;
+            background-color: transparent;
+            border: 2px solid #000;
+            border-radius: 0 20px 20px 0; /* Top-right and bottom-right corners */
+            left: -2px; /* Adjust this value to match the border width */
+        }
+
+
+</style>
+<table style="width:100%">
+<tr>
+    <th> Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+</tr>
+<tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+</tr>
+
+<tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+</tr>
+
+
+
+<tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+</tr>
+
+
+</table>
+
+<div class="rectangle"></div>
+
+
+
+
+<div class="horizontal-oval"></div>
+<div class="rectangle-with-rounded-diagonal-corners"></div>
+
+
+<body>
+    
+</body>
+</html>
